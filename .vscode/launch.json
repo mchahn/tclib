@@ -1,0 +1,20 @@
+{
+    // https://code.visualstudio.com/docs/java/java-debugging
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "header dump",
+            "request": "launch",
+            "mainClass": "de.org.mchahn.tclib.app.HeaderDump",
+            "args": [ "src/test/java/de/org/mchahn/tclib/container/resources/minvol.hc", "12345" ]
+        },
+        {
+            "type": "java",
+            "name": "password search",
+            "request": "launch",
+            "mainClass": "de.org.mchahn.tclib.app.PasswordSearch",
+            "args": [ "src/test/java/de/org/mchahn/tclib/container/resources/firstsector.dat", "generator", "3", "user_defined", "abcd1234_" ]
+        }
+    ]
+}
